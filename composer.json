@@ -20,18 +20,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Xperra\\Tree\\": "src/"
+            "Nevadskiy\\Tree\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Xperra\\Tree\\Tests\\": "tests/"
+            "Nevadskiy\\Tree\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Xperra\\Tree\\TreeServiceProvider"
+                "Nevadskiy\\Tree\\TreeServiceProvider"
             ]
         }
     }
