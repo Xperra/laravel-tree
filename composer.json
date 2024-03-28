@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Nevadskiy\\Tree\\": "src/"
+            "Xperra\\Tree\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nevadskiy\\Tree\\Tests\\": "tests/"
+            "Xperra\\Tree\\Tests\\": "tests/"
         }
     },
     "extra": {
