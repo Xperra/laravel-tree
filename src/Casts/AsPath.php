@@ -66,7 +66,9 @@ class AsPath implements CastsAttributes
             throw new RuntimeException('The path cannot have mixed "-" and "_" characters.');
         }
 
-        return Str::replace('-', '_', $path);
+        /* Postgres 16 allow to use symbol "-" in path. Docs: https://www.postgresql.org/docs/16/ltree.html */
+        //return Str::replace('-', '_', $path);
+        return $path;
     }
 
     /**
@@ -74,6 +76,8 @@ class AsPath implements CastsAttributes
      */
     protected function transformPgsqlPathFromDatabase(string $path): string
     {
-        return Str::replace('_', '-', $path);
+        /* Postgres 16 allow to use symbol "-" in path. Docs: https://www.postgresql.org/docs/16/ltree.html */
+        //return Str::replace('_', '-', $path);
+        return $path;
     }
 }
