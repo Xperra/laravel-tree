@@ -1,0 +1,34 @@
+{
+    "name": "xperra/laravel-tree",
+    "description": "Tree-like structure for Eloquent models.",
+    "license": "MIT",
+    "keywords": ["tree", "hierarchy", "materialized path", "path", "ltree", "laravel", "eloquent"],
+    "authors": [
+        {
+            "name": "Nevadskiy",
+            "email": "nevadskiy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "nevadskiy/laravel-tree": "^0.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nevadskiy\\Tree\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "vendor/nevadskiy/laravel-tree/src/Casts/AsPath.php"
+        ],
+        "files": [
+            "app/override/nevadskiy/laravel-tree/src/Casts/AsPath.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nevadskiy\\Tree\\TreeServiceProvider"
+            ]
+        }
+    }
+}
